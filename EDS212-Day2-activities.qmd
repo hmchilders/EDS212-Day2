@@ -1,0 +1,10 @@
+---
+title: "EDS212-Day2"
+---
+
+## Call Libraries
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
