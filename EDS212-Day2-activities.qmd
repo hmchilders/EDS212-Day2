@@ -33,3 +33,20 @@ dPda
 a <- 1.2
 eval(dPda)
 ```
+
+#### Palmer Penguins Activity
+
+```{r}
+ggplot(data.frame(penguins), aes(x = bill_length_mm, y = bill_depth_mm)) +
+  labs(title = "Penguin Data", x = " Bill Length (mm)", y= "Bill Depth (mm)")+
+  geom_point(aes(color=species))
+  
+
+```
+
+```{r}
+ggplot(data.frame(penguins), aes(x = species, y = flipper_length_mm)) +
+  labs(title = "Penguin Data", x = "Species", y= "Flipper Length(mm)")+
+  geom_jitter(aes(shape = island, color = island))+
+  theme_linedraw()
+```
