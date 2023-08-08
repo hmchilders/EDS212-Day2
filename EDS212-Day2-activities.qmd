@@ -8,3 +8,28 @@ title: "EDS212-Day2"
 library(tidyverse)
 library(palmerpenguins)
 ```
+
+### Find the Derivative
+
+```{r}
+fx = expression(x^2)
+
+dfdx = D(fx, "x")
+dfdx
+
+x <- 3
+eval(dfdx)
+
+```
+
+### Find the Derivative
+
+```{r}
+Pa = expression(2*(3*a+2)^4-5)
+
+dPda = D(Pa, "a")
+dPda
+
+a <- 1.2
+eval(dPda)
+```
